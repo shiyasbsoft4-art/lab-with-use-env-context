@@ -8,11 +8,11 @@ on:
  jobs: 
    job1:
    runs-on: ubuntu-latest
-    steps:
-     - runs: 
-              echo "iam shiyas ENV: $hello"
-              echo "iam the owner ${ {github.repository }}
-              echo "runner os ${{ runner.os }}
-              echo "arm ${{${{ runner.arch }}
+     steps:
+       run: 
+           echo "iam shiyas ENV: $hello"
+           echo "iam the owner: ${{github.repository }}"
+           echo "runner os: ${{ runner.os }}"
+           echo "Runner arch: ${{ runner.arch }}"
        
       
