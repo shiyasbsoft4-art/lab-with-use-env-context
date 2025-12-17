@@ -9,7 +9,8 @@ on:
    job1:
    runs-on: ubuntu-latest
     steps:
-     - runs:  echo "iam shiyas: ENV$hello"
+     - runs: 
+              echo "iam shiyas ENV: $hello"
               echo "iam the owner ${ {github.repository }}
               echo "runner os ${{ runner.os }}
               echo "arm ${{${{ runner.arch }}
