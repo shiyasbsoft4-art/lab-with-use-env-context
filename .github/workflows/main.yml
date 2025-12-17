@@ -1,15 +1,13 @@
 name: demo context
 on:
- workflow_dispatch:
-
- env:
+ workflow_dispatch
+env:
    name: shiyas
-
- jobs: 
+jobs: 
    job1:
-   runs-on: ubuntu-latest
-     steps:
-       run: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
            echo "iam shiyas ENV: $hello"
            echo "iam the owner: ${{github.repository }}"
            echo "runner os: ${{ runner.os }}"
